@@ -67,6 +67,7 @@ class SocketServer:
         self.server_socket.bind((self.host, self.port))
         self.server_socket.listen(10)
         print(f"Server listening on {self.port}")
+        print("this is test")
 
         try:
             while True:
