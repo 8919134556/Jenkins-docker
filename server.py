@@ -73,7 +73,6 @@ class SocketServer:
                 conn, address = self.server_socket.accept()
                 print(f"Connection from {address}")
                 self.handle_client(conn)
-
         except KeyboardInterrupt:
             print("\nShutting down server.")
             self.db_connection.close()
