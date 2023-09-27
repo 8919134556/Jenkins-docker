@@ -22,7 +22,6 @@ class SocketServer:
         """)
         connection.commit()
         return connection
-
     @staticmethod
     def decode_data(data):
         try:
